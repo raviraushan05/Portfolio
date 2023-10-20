@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ravi Raushan - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="home">
+          <div class="profile_name">
+            Ravi Raushan
+            <div class="contact_info">
+              <img src="envelope.png" alt="Email icon"/>
+              raviraushan73249@gmail.com
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+              <img src="phone.png" alt="Phone icon"/>
+              7324933548
+            </div>
+          </div>
+          <div class="topdiv">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+          </div>
+        </div>    
+      </nav>
+      
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="profilepic.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Ravi Raushan! <img src="hh.jpeg" width="60px"/>
+          </h1>
+          <p>
+           To obtain an entry-level software 
+developer position where I can apply 
+my education and skills to contribute 
+to the development of high-quality 
+software solutions. As a recent 
+graduate in computer science with a 
+strong foundation in programming 
+languages such as Java and C++, I am 
+eager to gain practical experience and 
+expand my knowledge in software 
+engineering. I am excited to work in a 
+collaborative environment where I can 
+grow and develop as a 
+software developer
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html5.png"/>
+          <h6>HTML</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+            <img src="css.jpeg"/>
+            <h6>CSS</h6>
+            <p>3 years experience</p>
+          </div>  
+          <div class="skill">
+            <img src="cpp.jpeg"/>
+            <h6>C++</h6>
+            <p>1 years experience</p>
+          </div>  
+          <div class="skill">
+            <img src="java.jpeg"/>
+            <h6>Java</h6>
+            <p>1 years experience</p>
+          </div>  
+          <div class="skill">
+            <img src="php.jpeg"/>
+            <h6>php</h6>
+            <p>3 Months experience</p>
+          </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Bike Rental management System</h3>
+            <ul>
+              <li>Constructed an application to manage the daily transactions between customers and
+                shops and created a new landing page to enhance customer experience</li>
+           <li>Utilized Swing to create a new template to automatically update the list of available 
+            bikes</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Mini ATM</h3>
+            <ul>
+              <li>Constructed a program to manage the daily transaction of customers and banks
+                The user can check their balance, Cash withdraw, User details</li>
+                <li>The user can also update their mobile number</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <ul>
+              <li>Created a styled single-page portfolio website , using HTML, CSS, JavaScript</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Ravi Raushan possesses impressive web development skills and a keen aptitude. He contributes effectively to teams, showcasing leadership potential through proactive engagement and inquisitive questioning."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          
+Collaborating with Ravi has been an exceptional journey. His profound expertise and unwavering commitment to precision stand out. Given his proficiency, I would certainly look forward to engaging him for any forthcoming projects requiring his skill
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I collaborated with Ravi in the early stages of our project, where his expertise in web development was crucial. He is a dedicated professional with a profound understanding of the field. His presence would undoubtedly be a valuable addition to any organization.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+          
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
